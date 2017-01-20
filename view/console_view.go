@@ -3,7 +3,7 @@ package view
 import (
 	"fmt"
 	
-	"github.com/rupalbarman/model"
+	"github.com/rupalbarman/2048-game-webserver/model"
 )
 
 func DisplayBoardConsole( b *model.Board) {

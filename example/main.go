@@ -1,9 +1,9 @@
 package main 
 
 import (
-	"github.com/rupalbarman/model"
-	"github.com/rupalbarman/view"
-	"github.com/rupalbarman/controller"
+	"github.com/rupalbarman/2048-game-webserver/model"
+	"github.com/rupalbarman/2048-game-webserver/view"
+	"github.com/rupalbarman/2048-game-webserver/controller"
 
 	"fmt"
 	"os"

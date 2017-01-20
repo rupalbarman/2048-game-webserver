@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"github.com/rupalbarman/model"
+	"github.com/rupalbarman/2048-game-webserver/model"
 	
 	"net/http"
 	"html/template"
