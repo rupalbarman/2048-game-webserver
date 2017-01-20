@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"model"
+	"github.com/rupalbarman/model"
 	
 	"net/http"
 )

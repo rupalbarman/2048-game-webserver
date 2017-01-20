@@ -2,7 +2,8 @@ package view
 
 import (
 	"fmt"
-	"model"
+	
+	"github.com/rupalbarman/model"
 )
 
 func DisplayBoardConsole( b *model.Board) {
