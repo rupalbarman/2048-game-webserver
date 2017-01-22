@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/rupalbarman/2048-game-webserver/model"
 	"github.com/rupalbarman/2048-game-webserver/view"
-	"github.com/rupalbarman/2048-game-webserver/controller"
+	//"github.com/rupalbarman/2048-game-webserver/controller"
 
 	"fmt"
 	"os"
@@ -27,7 +27,8 @@ func webMode() {
 	model.GenerateTile(b, 2, len(b.Matrix), len(b.Matrix[0]))
 	model.GenerateTile(b, 2, len(b.Matrix), len(b.Matrix[0]))
 	
-	controller.Run(b)
+	//controller.Run(b)
+	run(b)
 }
 
 func consoleMode() {
