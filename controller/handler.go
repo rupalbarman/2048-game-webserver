@@ -8,7 +8,7 @@ import (
 
 func game(w http.ResponseWriter, r *http.Request) {
 	if r.Method== "GET" {
-		renderTemplate(w, "/game.html", b_copy)
+		renderTemplate(w, "//game.html", b_copy)
 	} else {
 		r.ParseForm()
 	}
@@ -44,7 +44,7 @@ func down(w http.ResponseWriter, r *http.Request) {
 
 func about(w http.ResponseWriter, r *http.Request) {
 	if r.Method== "GET" {
-		renderTemplate(w, "/about.html", b_copy)
+		renderTemplate(w, "//about.html", b_copy)
 	} else {
 		r.ParseForm()
 	}
