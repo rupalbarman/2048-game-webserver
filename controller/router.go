@@ -31,6 +31,6 @@ func Run(b *model.Board) {
 	http.HandleFunc("/up", up)
 	http.HandleFunc("/down", down)
 	http.HandleFunc("/about", about)
-	//http.Handle("/view", http.FileServer(http.Dir("../src/view")))
+	//http.Handle("/view", http.FileServer(http.Dir("../2048-game-webserver/view")))
 	http.ListenAndServe(":" + port, nil)
 }

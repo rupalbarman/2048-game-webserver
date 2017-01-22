@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rupal's 2048</title>
+	<form action="/about" >
+	<div><input type="submit" value="About"></div>
+	</form>
+</head>
+
+<body>
+
+ <table border="1" align="center"> 
+
+         	{{range .Matrix}} 
+         	<tr> 
+            {{range .}} 
+            	<td> <canvas id="tut0" width="100" height="100"></canvas><br/> 
+               	<label id="lab0"></label>{{.}}</td> 
+            {{end}}
+            </tr>
+            {{end}}
+ </table>
+
+<form action="/left" >
+<div><input type="submit" value="Left"></div>
+</form>
+
+<form action="/right" >
+<div><input type="submit" value="Right"></div>
+</form>
+
+<form action="/up" >
+<div><input type="submit" value="Up"></div>
+</form>
+
+<form action="/down" >
+<div><input type="submit" value="Down"></div>
+</form>
+
+</body>
+</html>
