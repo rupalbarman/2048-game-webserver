@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/rupalbarman/2048-game-webserver/model"
 	
-	//"os"
+	"os"
 	"log"
 	"net/http"
 	"html/template"
@@ -64,8 +64,8 @@ func run(b *model.Board) {
 	// b_copy points to the original board
 	b_copy= b
 
-	//port := os.Getenv("PORT")
-	port:="8080"
+	port := os.Getenv("PORT")
+	//port:="8080"
 	if port == "" {
 		log.Fatal("$PORT must be set")
 	}
