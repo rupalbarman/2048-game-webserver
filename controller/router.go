@@ -20,7 +20,7 @@ func Run(b *model.Board) {
 	b_copy= b
 
 	port := os.Getenv("PORT")
-
+	//port:="8080"
 	if port == "" {
 		log.Fatal("$PORT must be set")
 	}
@@ -32,5 +32,5 @@ func Run(b *model.Board) {
 	http.HandleFunc("/down", down)
 	http.HandleFunc("/about", about)
 	//http.Handle("/view", http.FileServer(http.Dir("../src/view")))
-	http.ListenAndServe(":"+port, nil)
+	http.ListenAndServe(":" + port, nil)
 }
